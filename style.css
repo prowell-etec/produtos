@@ -1,0 +1,59 @@
+/* Estilo global para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Estilização do container principal */
+.container {
+    max-width: 1200px; /* Limita a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 20px; /* Adiciona espaço interno ao container */
+}
+
+/* Estilização do título principal */
+h1 {
+    text-align: center; /* Centraliza o título */
+    color: #333; /* Define a cor do texto */
+}
+
+/* Estilização da lista de produtos */
+.product-list {
+    display: flex; /* Utiliza flexbox para organizar os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens no container */
+}
+
+/* Estilização individual de cada item de produto */
+.product-item {
+    background-color: #fff; /* Fundo branco para os itens */
+    border: 1px solid #ddd; /* Bordas cinza claro */
+    border-radius: 5px; /* Cantos levemente arredondados */
+    padding: 15px; /* Espaçamento interno */
+    width: 250px; /* Define a largura fixa dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para efeito de profundidade */
+    text-align: center; /* Centraliza o texto dentro do item */
+}
+
+/* Estilização do nome do produto */
+.product-item h2 {
+    font-size: 1.5em; /* Aumenta o tamanho da fonte do nome do produto */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do nome */
+}
+
+/* Estilização do preço do produto */
+.product-item p {
+    color: #555; /* Cor do texto do preço */
+    font-size: 1.2em; /* Tamanho da fonte do preço */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    /* Itens de produto ocupam 100% da largura da tela */
+    .product-item {
+        width: 100%;
+    }
+}
